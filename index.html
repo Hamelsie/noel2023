@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Noel 2023!</title>
 </head>
-</body>
-    <audio autoplay>
-            <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Mark_Smeby/En_attendant_Nol/Mark_Smeby_-_07_-_Jingle_Bell_Swing.mp3">
-            Trình duyệt của bạn không hỗ trợ phát nhạc.
-        </audio>
 <body>
     <div class="container">
         <div class="bgr-container">
@@ -257,6 +252,23 @@
         <marquee behavior="" direction="">💕💕💕</marquee>
     </div>
 </body>
+       <script>
+        // Tạo một phần tử audio
+        var audio = document.createElement('audio');
+        audio.controls = true;
+        audio.autoplay = true;
+
+        // Tạo nguồn audio và thiết lập đường dẫn
+        var source = document.createElement('source');
+        source.src = 'https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Mark_Smeby/En_attendant_Nol/Mark_Smeby_-_07_-_Jingle_Bell_Swing.mp3';
+        source.type = 'audio/mpeg';
+
+        // Thêm nguồn audio vào phần tử audio
+        audio.appendChild(source);
+
+        // Thêm phần tử audio vào vùng body của trang web
+        document.body.appendChild(audio);
+    </script>
 <script src="app.js"></script>
 </html>
 <!-- https://cliply.co/wp-content/uploads/2019/12/371912430_SANTA_CLAUS_400px.gif -->
